@@ -702,8 +702,6 @@
 
   <!-- Remove unused AOSP repos -->
   <include name="remove.xml" />
-
-  <!-- Add all tracked DU/AOSP repos -->
-  <include name="p9x_default.xml" />
+  <include name="invictrix.xml" />
 
 </manifest>
