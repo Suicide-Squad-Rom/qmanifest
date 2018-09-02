@@ -11,7 +11,7 @@ Initialize Source (Assuming you have a valid build environment setup):
         mkdir invictrix (or whatever you want to name the source folder)
 
         cd ~/invictrix
-        repo init -u https://github.com/InvictrixROM/manifest.git -b inv-8.1
+        repo init -u https://github.com/InvictrixROM/manifest.git -b inv-9.0
 
 Sync Source:
 
