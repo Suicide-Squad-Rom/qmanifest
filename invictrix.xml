@@ -36,6 +36,7 @@
   <!-- External -->
   <project path="external/clang" name="external_clang" remote="invictrix" />
   <project path="external/selinux" name="external_selinux" remote="invictrix" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="invictrix" /> 
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" remote="invictrix" />
@@ -44,12 +45,18 @@
   <project path="frameworks/native" name="frameworks_native" remote="invictrix" />
 
   <!-- Hardware -->
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="invictrix" />
+  <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" remote="invictrix" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" remote="invictrix" revision="inv-9.0-caf-8998" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="invictrix" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="invictrix" />
+  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="invictrix" />
   <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="invictrix" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="invictrix" />
+  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/msm8x84" name="hardware_qcom_msm8x84" remote="invictrix" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="invictrix" />
+  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="invictrix" revision="inv-9.0-caf" />
 
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="invictrix" />
@@ -65,6 +72,12 @@
   <!-- Vendor -->
   <project path="vendor/invictrix" name="vendor_invictrix" remote="invictrix" />
   <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="invictrix" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="invictrix" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="invictrix" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="invictrix">
+    <copyfile dest="hardware/invictrix/Android.bp" src="Android.bp" />
+  </project>
   <project path="vendor/themes" name="vendor_themes" remote="invictrix" />
 
 </manifest>
