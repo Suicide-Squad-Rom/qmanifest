@@ -1,87 +1,104 @@
-# Dirty Unicorns #
-[<center><img src="https://lh3.googleusercontent.com/-p9S_rIap_No/V9iIHcrU1_I/AAAAAAAAEPk/Mba0HIFDvR8oE_1hmfj0SGWqlx561mZBwCL0B/w971-h547-n-no/12.png" height="100%" width="100%;"/></center>](https://github.com/dirtyunicorns)
+Invictrix
+------------------
 
-## Setup your build environment & Sync our source ##
-To setup your build enivornment and sync DU, please follow this guide: [Link](https://raw.githubusercontent.com/nathanchance/Android-Tools/master/Guides/Building_AOSP.txt)
+Getting Started
+------------------
 
-## Submitting Patches ##
-Dirty Unicorns is a open source project and welcomes new contributors.
+To get started with building Invictrix, you'll need to get familiar with Git and Repo.
 
-To start contributing to DU, just register at "gerrit.dirtyunicorns.com".
+Initialize Source (Assuming you have a valid build environment setup):
 
-Open up terminal to create your ssh keys required for submitting patches to gerrit and type in:
+        mkdir invictrix (or whatever you want to name the source folder)
 
-```bash
-git config --global review.gerrit.dirtyunicorns.com.username <username you registered with>
+        cd ~/invictrix
+        repo init -u https://github.com/InvictrixROM/manifest.git -b inv-8.1
 
-git config --global review.gerrit.dirtyunicorns.com.email <your email you registered with>
+Sync Source:
 
-ssh-keygen -t rsa -C "your@email.com"
-```
+        repo sync -c -f -jx --force-sync --no-clone-bundle --no-tags (x being however many cpu jobs, you can also use -c to sync only the current branch specified by repo init)
 
-In our gerrit click on your "Avatar" on the top right, then on "Settings".
+Build Source:
 
-While in 'Settings' Click on "SSH Public Keys" on the left hand side and then on "Add Key".
+        . build/envsetup.sh
+        lunch invictrix_device-userdebug
+        mka clean
+        mka bacon
 
-Now on your computer navigate to your home "~/.ssh" and open up "id_rsa.pub", copy/paste the context to "Gerrit SSH Public Keys".
+Submitting Patches
+------------------
 
-You can send patches to us by using these commands in terminal:
+We're open source, and patches are always welcome!
+To do this, you will need an account setup with our gerrit server and a changeid hooks.
+To add the changeid hook in a project, use the following commands:
 
-```bash
-cd PROJECT - i.e cd packages/apps/Settings
+	cd <project>
+	scp -p -P 29418 <username>@review.invictrixrom.com:hooks/commit-msg ${gitdir}/hooks/
 
-Make whatever edits you need to .....
+You can also install the hook globally in all local projects
 
-git add -A
-git commit -a
+	repo forall -c 'gitdir=$(git rev-parse --git-dir); scp -p -P 29418 <username>@review.invictrixrom.com:hooks/commit-msg ${gitdir}/hooks/'
 
-Add commit message that makes sense for others to understand what the commit is for
+You can send patches by using these commands:
 
-Ctrl X, then Y to save and Enter
+    cd <project>
+    git add --all
+    git commit
+    git push ssh://<username>@review.invictrixrom.com:29418/<project> HEAD:refs/for/<branch>
 
-git push ssh://<username>@gerrit.dirtyunicorns.com:29418/<project> HEAD:refs/for/<branch>
-```
+This will commit your changes into a single commit.
+Make sure your git has the changeid hooks added.
+If you are going to make extra additions, just repeat steps, but instead of
 
-* `<username>` - Your Gerrit username (which can be seen/set [here](https://gerrit.dirtyunicorns.com/#/settings/))
-* `<project>` - The git repo you are pushing to; all options can be viewed at [this link](https://gerrit.dirtyunicorns.com/#/admin/projects/)
-* `<branch>` - The git branch your change is based on; for projects using this manifest, it is `p9x`
+	git commit
 
-A full command would look like:
+use
 
-```bash
-git push ssh://Mazda@gerrit.dirtyunicorns.com:29418/android_packages_apps_Settings HEAD:refs/for/p9x
-```
+	git commit --amend
 
-If you are going to make extra additions, just repeat steps (don't start a new patch), but instead of git commit -m
-use git commit --amend. Gerrit will recognize it as a new patchset. Do NOT change the Change-Id in the commit message.
+Gerrit will recognize it as a new patchset.
 
-For more information on how to push to a gerrit, please read the following: [Link](https://wiki.mahara.org/wiki/Developer_Area/Contributing_Code)
+To view the status of your and others patches, visit [Invictrix Code Review](https://review.invictrixrom.com)
 
-Also to make this even easier, you can use a universal gerrit script provided by PAC: [Link](http://forum.xda-developers.com/showthread.php?t=2530388)
+DMCA Copyright Infringement Notification
+------------------
+Official DMCA Copyright Infringement Notification
 
-If you still can not figure it out, don't hesitate to contact us in our G+ community: [Link](https://plus.google.com/u/0/communities/109738128866939227235)
+Our ROM builds follow the safe harbor provisions of 17 U.S.C. §512, otherwise known as 
+Digital Millennium Copyright Act (“DMCA”).
 
-## Maintain Authorship ##
-Please make sure if you submit a patch/fix from another ROM that you maintain authorship.
-This is very important to not only us but to the entire open source community. It's what keeps it going and encourages more developers to contribute their work.
+To file a copyright infringement notification with us, you will need to send a written 
+communication that includes substantially the following:
 
-If you manually cherry pick a patch/fix please add the original author prior to pushing to our gerrit.
-This task is very easy and is usually done after you commit a patch/fix locally.
+A physical or electronic signature of a person authorized to act on behalf of the owner of 
+an exclusive right that is allegedly infringed.
+Identification of the copyrighted work claimed to have been infringed, or, if multiple 
+copyrighted works at a single online site are covered by a single notification, a 
+representative list of such works at that site.
+Identification of the material that is claimed to be infringing or to be the subject of 
+infringing activity and that is to be removed or access to which is to be disabled, and 
+information reasonably sufficient to permit the service provider to locate the material. 
+Providing URLs in the body of an email is the best way to help us locate content quickly.
+Information reasonably sufficient to permit the service provider to contact the 
+complaining party, such as an address, telephone number, and, if available, an electronic 
+mail address at which the complaining party may be contacted.
+A statement that the complaining party has a good faith belief that use of the material in 
+the manner complained of is not authorized by the copyright owner, its agent, or the law.
+A statement that the information in the notification is accurate, and under penalty of 
+perjury, that the complaining party is authorized to act on behalf of the owner of an 
+exclusive right that is allegedly infringed (Note that under Section 512(f) any person who 
+knowingly and materially misrepresents that material or activity is infringing may be 
+subject to liability for damages. In other words, DON’T MAKE FALSE CLAIMS!
+To expedite our ability to process your request, such written notice should be sent to our 
+designated agent whose contact information is available via our “DMCA Designated 
+Agent” listed below:
 
-i.e - Once you type in "git commit -a" the commit message and you have saved it, type in the following:
+Jacob McSwain
+  405-517-1253
+  jacob.a.mcswain@gmail.com
 
-```bash
-git commit --amend --author "Author <email@address.com>"
-```
-
-So it should look like this once you get all author's information:
-
-```bash
-git commit --amend --author "Alex Cruz <du.alexcruz@gmail.com>"
-```
-
-If you do not want to clone or fetch the repo and the patch is on GitHub, you can easily get the author of the patch by adding `.patch` to the end of the commit URL and copy the contents of the from line after the `From:`.
-
-For example: https://github.com/DirtyUnicorns/android_manifest/commit/9d44b2e34fd0b6674de79d001010e513ba14e312.patch
-
-It is also recommended that you keep the date intact as well as it helps other open source users figure out the original version that a patch may have come from. Copy the contents of the date line after the `Date:` then add `--date="<date_just_copied>"` to the above `git commit --amend` command.
+Credits
+Google for AOSP
+Roger Truttman for bootanimations
+Rinky McBally for our beloved logo
+Dustin Wann for some sick walls
+Others we may have missed
