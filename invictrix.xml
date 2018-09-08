@@ -55,6 +55,7 @@
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="invictrix" />
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/msm8x84" name="hardware_qcom_msm8x84" remote="invictrix" />
+  <project path="hardware/qcom/power" name="hardware_qcom_power" remote="invictrix" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="invictrix" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="invictrix" revision="inv-9.0-caf" />
 
