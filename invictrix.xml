@@ -33,6 +33,9 @@
   </project>
   <project path="manifest" name="manifest" remote="invictrix" />
 
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="invictrix" />
+
   <!-- External -->
   <project path="external/clang" name="external_clang" remote="invictrix" />
   <project path="external/selinux" name="external_selinux" remote="invictrix" />
