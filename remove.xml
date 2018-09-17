@@ -45,6 +45,7 @@
   <!-- External -->
   <remove-project name="platform/external/clang" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
@@ -60,9 +61,19 @@
   <remove-project name="platform/build/soong" />
 
   <!-- Hardware -->
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/msm8x84" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/ril" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Bluetooth" />
@@ -90,6 +101,7 @@
   <remove-project name="platform/packages/screensavers/WebView" />
 
   <!-- System -->
+  <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/sepolicy" />
 
