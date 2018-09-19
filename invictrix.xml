@@ -75,6 +75,8 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="invictrix" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="invictrix" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="invictrix" />
+  <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="invictrix" />
+  <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="invictrix" />
 
   <!-- System -->
   <project path="system/core" name="system_core" remote="invictrix" />
