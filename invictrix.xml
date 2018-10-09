@@ -54,13 +54,16 @@
   <project path="hardware/ril" name="hardware_ril" remote="invictrix" />
   <project path="hardware/ril-caf" name="hardware_ril" remote="invictrix" revision="inv-9.0-caf" />
   <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" remote="invictrix" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" remote="invictrix" revision="inv-9.0-caf-8996" />
   <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="invictrix" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="invictrix" />
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" remote="invictrix" revision="inv-9.0-caf-8996" />
   <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="invictrix" />
   <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="invictrix" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="invictrix" />
+  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" remote="invictrix" revision="inv-9.0-caf-8996" />
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" remote="invictrix" revision="inv-9.0-caf-8998" />
   <project path="hardware/qcom/msm8x84" name="hardware_qcom_msm8x84" remote="invictrix" />
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="invictrix" />
