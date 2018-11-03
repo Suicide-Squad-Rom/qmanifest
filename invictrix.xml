@@ -91,6 +91,9 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="invictrix" />
   <project path="system/vold" name="system_vold" remote="invictrix" />
 
+  <!-- AmbientPlay -->
+  <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="invictrix" />
+
   <!-- Ant Wireless -->
   <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="invictrix" />
   <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="invictrix" />
