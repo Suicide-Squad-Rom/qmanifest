@@ -98,6 +98,7 @@
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="invictrix">
     <copyfile dest="hardware/invictrix/Android.bp" src="Android.bp" />
   </project>
+  <project path="vendor/support" name="vendor_support" remote="invictrix" />
   <project path="vendor/themes" name="vendor_themes" remote="invictrix" />
 
 </manifest>
