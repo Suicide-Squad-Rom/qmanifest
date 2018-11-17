@@ -52,6 +52,7 @@
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/compile/mclinker" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
 
   <!-- General -->
   <remove-project name="platform/bionic" />
@@ -82,6 +83,7 @@
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/DevCamera" />
+  <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/Email" />
   <remove-project name="platform/packages/apps/Gallery" />
   <remove-project name="platform/packages/apps/Gallery2" />
@@ -96,9 +98,12 @@
   <remove-project name="platform/packages/apps/Test/connectivity" />
   <remove-project name="platform/packages/apps/UnifiedEmail" />
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/packages/screensavers/Basic" />
   <remove-project name="platform/packages/screensavers/PhotoTable" />
   <remove-project name="platform/packages/screensavers/WebView" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/services/Telephony" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
