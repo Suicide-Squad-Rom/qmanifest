@@ -105,7 +105,6 @@
 
   <!-- Vendor -->
   <project path="vendor/invictrix" name="vendor_invictrix" remote="invictrix" />
-  <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="invictrix" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="invictrix" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="invictrix" />
