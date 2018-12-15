@@ -90,6 +90,7 @@
   <project path="system/core" name="system_core" remote="invictrix" />
   <project path="system/extras" name="system_extras" remote="invictrix" />
   <project path="system/sepolicy" name="system_sepolicy" remote="invictrix" />
+  <project path="system/update_engine" name="system_update_engine" remote="invictrix" />
   <project path="system/vold" name="system_vold" remote="invictrix" />
 
   <!-- AmbientPlay -->
