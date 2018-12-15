@@ -82,6 +82,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="invictrix" />
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="invictrix" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="invictrix" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="invictrix" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="invictrix" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="invictrix" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="invictrix" />
