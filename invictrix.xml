@@ -12,6 +12,7 @@
            fetch="https://github.com/InvictrixRom-Devices/"
            review="https://review.invictrixrom.com/" />
 
+  <project path="bionic" name="bionic" remote="invictrix" />
   <project path="manifest" name="manifest" remote="invictrix" />
   <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
 
