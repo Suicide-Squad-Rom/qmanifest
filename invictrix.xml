@@ -15,5 +15,6 @@
   <project path="bionic" name="bionic" remote="invictrix" />
   <project path="manifest" name="manifest" remote="invictrix" />
   <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
+  <project path="vendor/invictrix" name="vendor_invictrix" remote="invictrix" />
 
 </manifest>
