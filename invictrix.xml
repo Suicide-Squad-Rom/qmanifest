@@ -13,5 +13,6 @@
            review="https://review.invictrixrom.com/" />
 
   <project path="manifest" name="manifest" remote="invictrix" />
+  <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
 
 </manifest>
