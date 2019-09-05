@@ -5,11 +5,11 @@
            fetch="https://github.com/" />
   <remote  name="invictrix"
            revision="10"
-           fetch="git@github.com:InvictrixRom/"
+           fetch="https://github.com/InvictrixRom/"
            review="https://review.invictrixrom.com/" />
   <remote  name="invictrix-devices"
            revision="10"
-           fetch="git@github.com:InvictrixRom-Devices/"
+           fetch="https://github.com/InvictrixRom-Devices/"
            review="https://review.invictrixrom.com/" />
 
   <project path="manifest" name="manifest" remote="invictrix" />
