@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-10.0.0_r2" />
-
-  <default revision="refs/heads/lineage-17.0"
-           remote="github"
-           sync-c="true"
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-10.0.0_r2"
+           remote="aosp"
            sync-j="4" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-17.0" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -750,10 +751,10 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
-  <project name="Suicide-Squad-Rom/android_device_google_taimen" path="device/google/taimen" remote="github" revision="lineage-17.0"/>
-  <project name="Suicide-Squad-Rom/android_device_google_wahoo" path="device/google/wahoo" remote="github" revision="lineage-17.0" />
-  <project name="Suicide-Squad-Rom/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="github" revision="lineage-17.0"/>
-  <project name="Eamo5/proprietary_vendor_google" path="vendor/google" remote="github" revision="lineage-17.0" />
+  <project name="Suicide-Squad-Rom/android_device_google_taimen" path="device/google/taimen" remote="github" revision="los"/>
+  <project name="Suicide-Squad-Rom/android_device_google_wahoo" path="device/google/wahoo" remote="github" revision="los" />
+  <project name="Suicide-Squad-Rom/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="github" revision="los"/>
+  <project name="Eamo5/proprietary_vendor_google" path="vendor/google" remote="github" revision="los" />
 
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
