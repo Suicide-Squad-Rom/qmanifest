@@ -751,7 +751,7 @@
   <project name="Suicide-Squad-Rom/android_device_google_wahoo" path="device/google/wahoo" remote="github" revision="lineage-17.0" />
   <project name="Suicide-Squad-Rom/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="github" revision="lineage-17.0"/>
   <project name="Eamo5/proprietary_vendor_google" path="vendor/google" remote="github" revision="lineage-17.0" />
-  <project name="statixos/android_vendor_pixelgapps" path="vendor/pixelgapps" remote="gitlab" revision="9" />
+
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
