@@ -16,5 +16,9 @@
   <project path="manifest" name="manifest" remote="invictrix" />
   <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
   <project path="vendor/invictrix" name="vendor_invictrix" remote="invictrix" />
-
+  <project name="Suicide-Squad-Rom/android_device_google_taimen" path="device/google/taimen" remote="los"/>
+  <project name="Suicide-Squad-Rom/android_device_google_wahoo" path="device/google/wahoo" remote="los"/>
+  <project name="Suicide-Squad-Rom/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="los"/>
+  <project name="Eamo5/proprietary_vendor_google" path="vendor/google" remote="los"/>
+  
 </manifest>
