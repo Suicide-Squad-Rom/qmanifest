@@ -30,7 +30,7 @@
   <project path="system/core" name="system_core" groups="pdk" remote="invictrix" />
   <project path="manifest" name="manifest" remote="invictrix" />
   <project path="vendor/extras" name="vendor_extras" remote="invictrix" />
-  <project path="vendor/invictrix" name="vendor_invictrix" remote="invictrix" />
+  <project path="vendor/invictrix" name="BlackDeaths/vendor" remote="github" revision="10"/>
   <project name="Suicide-Squad-Rom/android_device_google_taimen" path="device/google/taimen" remote="github" revision="lineage-17.0"/>
   <project name="Suicide-Squad-Rom/android_device_google_wahoo" path="device/google/wahoo" remote="github" revision="lineage-17.0"/>
   <project name="Suicide-Squad-Rom/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="github" revision="lineage-17.0"/>
